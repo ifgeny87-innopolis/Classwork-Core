@@ -1,0 +1,5 @@
+Name=Ivan age=20
+Name=John surname=Connor age=30
+surname=Lolita age=25
+Name=Kelly age=40 sex=female
+Name=Sergey age=35 sex=male
