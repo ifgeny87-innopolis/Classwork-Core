@@ -1,4 +1,4 @@
-package ru.innolearn.day01;
+package ru.innolearn.tests;
 
 /**
  * Created by marina on 05.12.2016.

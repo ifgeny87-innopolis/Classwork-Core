@@ -2,6 +2,8 @@ package ru.innolearn.day04.threads;
 
 /**
  * Created by marina on 08.12.2016.
+ *
+ * Тестирование работы потоков.
  */
 public class SimpleThreadTest {
     public static void main(String[] args) {
