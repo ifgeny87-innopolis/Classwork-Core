@@ -39,14 +39,24 @@ public class ParseProgram {
             String command = scanner.next();
 
             // для указанной команды выполняет действие
-            if (command.equals("parse")) {
-                parse(scanner.next());
-            } else if (command.equals("serialize")) {
-                serialize(scanner.next());
-            } else if (command.equals("deserialize")) {
-                deserialize(scanner.next());
-            } else if (!command.equals("exit")) {
-                System.out.println("Command " + command + " not found");
+            switch (command) {
+                case "parse":
+                    parse(scanner.next());
+                    break;
+
+                case "serialize":
+                    serialize(scanner.next());
+                    break;
+
+                case "deserialize":
+                    deserialize(scanner.next());
+                    break;
+
+                case "exit":
+                    break;
+
+                default:
+                    System.out.println("Command " + command + " not found");
             }
 
             // чтоб обработать перевод строки
@@ -108,10 +118,19 @@ public class ParseProgram {
 
                 for (String part : parts) {
                     String[] keyValue = part.split("=");
-                    if (keyValue[0].toLowerCase().equals("name"))
-                        human.setName(keyValue[1]);
-                    else if (keyValue[0].toLowerCase().equals("age"))
-                        human.setAge(Integer.parseInt(keyValue[1]));
+                    switch (keyValue[0]) {
+                        case "name":
+                            human.setName(keyValue[1]);
+                            break;
+
+                        case "surname":
+                            human.setSurname(keyValue[1]);
+                            break;
+
+                        case "age":
+                            human.setAge(Integer.parseInt(keyValue[1]));
+                            break;
+                    }
                 }
 
                 humans.add(human);
