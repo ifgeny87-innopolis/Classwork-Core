@@ -24,7 +24,7 @@ public class CalcTest {
             guys.add(new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    for (int j = 0; j < 10_000_000; j++) {
+                    for (int j = 0; j < 1_000_000; j++) {
                         synchronized (summator) {
                             count++;
                         }
@@ -44,7 +44,7 @@ public class CalcTest {
         synchronized (summator) {
             while (workThreads > 0) {
                 System.out.println("APP: Wait for " + workThreads + " threads...");
-                summator.wait(1000);
+                summator.wait(100);
             }
         }
 

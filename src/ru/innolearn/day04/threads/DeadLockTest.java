@@ -2,6 +2,8 @@ package ru.innolearn.day04.threads;
 
 /**
  * Created by marina on 08.12.2016.
+ *
+ * Имитируем Dead Lock.
  */
 public class DeadLockTest {
     public static void main(String[] args) {
@@ -27,7 +29,7 @@ public class DeadLockTest {
         public void run() {
             synchronized (m1) {
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
