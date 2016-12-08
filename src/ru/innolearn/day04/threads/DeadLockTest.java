@@ -17,6 +17,7 @@ public class DeadLockTest {
 
     static class MyThread extends Thread {
         private Object m1, m2;
+
         MyThread(Object m1, Object m2) {
             this.m1 = m1;
             this.m2 = m2;
