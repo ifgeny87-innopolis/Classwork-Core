@@ -13,6 +13,7 @@ public class CalcTest {
 
     static int workThreads = 100;
     static int count;
+    static volatile int volCount;
 
     public static void main(String[] args) throws InterruptedException {
         long start = System.nanoTime();
@@ -25,9 +26,11 @@ public class CalcTest {
                 @Override
                 public void run() {
                     for (int j = 0; j < 1_000_000; j++) {
-                        synchronized (summator) {
+//                        synchronized (summator) {
                             count++;
-                        }
+                            summator.count++;
+                            volCount++;
+//                        }
                     }
 
                     synchronized (summator) {
@@ -48,7 +51,9 @@ public class CalcTest {
             }
         }
 
-        System.out.printf("Sum: %,d\n", count);
+        System.out.printf("Count: %,d\n", count);
+        System.out.printf("Summator.count: %,d\n", summator.count);
+        System.out.printf("volCount: %,d\n", volCount);
 
         long finish = System.nanoTime();
         long totalLenth = finish - start;
