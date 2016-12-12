@@ -17,7 +17,7 @@ public class VolatileTest {
 		s.start();
 		t.start();
 
-		while(p.isAlive());
+		while (p.isAlive()) ;
 
 		q.interrupt();
 		s.interrupt();
@@ -35,7 +35,7 @@ class RR {
 class T1 extends Thread {
 	@Override
 	public void run() {
-		while (!isInterrupted() && RR.a < Integer.MAX_VALUE-1) {
+		while (!isInterrupted() && RR.a < Integer.MAX_VALUE - 1) {
 			RR.a++; // нечетное
 			RR.flag = false;
 			RR.a++; // четное
@@ -54,13 +54,13 @@ class T2 extends Thread {
 	@Override
 	public void run() {
 		while (!isInterrupted())
-			// условие номер один, RR.a - должно быть четным!
+			// условие номер один, CloneTest.a - должно быть четным!
 			if (RR.flag) {
 				int a = RR.a;
-				if(a % 2 == 0)
+				if (a % 2 == 0)
 					continue;
 
-				// a <= RR.a - закон
+				// a <= CloneTest.a - закон
 				System.out.printf("%d   %,d   %,d   %b\n", index, a, RR.a, RR.flag);
 			}
 	}

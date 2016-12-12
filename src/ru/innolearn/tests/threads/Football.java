@@ -15,8 +15,8 @@ public class Football {
 
 	public static void main(String[] args) {
 		synchronized (monitor) {
-			(new Spartak()).start();
-			(new Zenit()).start();
+			new Spartak().start();
+			new Zenit().start();
 		}
 	}
 
