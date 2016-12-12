@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <object type="Human">
+        <field name="name" type="String" value="Vanya"/>
+        <field name="age" type="Integer" value="15"/>
+    </object>
+    <object type="Student">
+        <field name="name" type="String" value="John"/>
+        <field name="course" type="Integer" value="3"/>
+        <field name="age" type="Integer" value="20"/>
+    </object>
+    <object type="Worker">
+        <field name="jobtitle" type="String" value="Ingenier"/>
+        <field name="name" type="String" value="Petya"/>
+        <field name="age" type="Integer" value="25"/>
+    </object>
+</list>
