@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * Created by marina on 06.12.2016.
- * <p>
+ *
  * Играемся с HashMap:
  * 1. Создаем два объекта Human, которые равны по equals() и hashCode()
  * 2. Для первого в HashMap добавим машину
