@@ -1,7 +1,6 @@
 package ru.innolearn.day13.tcpchat;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.slf4j.*;
 
 import java.util.Scanner;
 
@@ -12,7 +11,7 @@ import java.util.Scanner;
  */
 public class ClientMain {
 	// logger
-	static private Logger logger = LoggerFactory.getLogger(ClientMain.class);
+	static private Logger log = LoggerFactory.getLogger(ClientMain.class);
 
 	public static void main(String[] args) {
 		String name = null;
@@ -29,7 +28,7 @@ public class ClientMain {
 			name = scanner.nextLine();
 			if (name.length() > 0)
 				break;
-			System.out.println("Bark! Wrong name.");
+			System.err.println("Bark! Wrong name.");
 		}
 
 		// узнаю строку подключения
@@ -37,7 +36,7 @@ public class ClientMain {
 			System.out.println("Type connection string [host:port].");
 			String[] parts = scanner.nextLine().split(":");
 			if (parts.length != 2) {
-				System.out.println("Bark! Wrong connection string.");
+				System.err.println("Bark! Wrong connection string.");
 				continue;
 			}
 			hostname = parts[0];

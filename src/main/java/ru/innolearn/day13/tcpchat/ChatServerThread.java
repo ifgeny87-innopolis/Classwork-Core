@@ -93,8 +93,7 @@ class ChatServerThread extends Thread {
 		sendLine("OK");
 
 		// читаем байты от клиента, пишем байты в файл
-		try (FileOutputStream fos = new FileOutputStream(
-				new File("uploads", fileName))) {
+		try (FileOutputStream fos = new FileOutputStream(new File("uploads", fileName))) {
 			int readed = 0;
 			byte[] buffer = new byte[1024];
 			while (readed < size) {
@@ -104,14 +103,12 @@ class ChatServerThread extends Thread {
 				fos.write(buffer, 0, r);
 			}
 		} catch (IOException e) {
-			System.out.println("SERVER ERROR file save");
-			e.printStackTrace();
+			log.error("SERVER ERROR file save", e);
 			sendLine("ERROR");
 			return;
 		}
 
 		// файл принят, подтвердим
 		sendLine("OK");
-
 	}
 }

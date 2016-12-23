@@ -1,2 +1,2 @@
-Manifest-Version: 1.1
-Main-Class: ru.innolearn.day13.tcpchat.c.ChatClient
+Manifest-Version: 0.1
+Main-Class: ru.innolearn.day13.tcpchat.ClientMain

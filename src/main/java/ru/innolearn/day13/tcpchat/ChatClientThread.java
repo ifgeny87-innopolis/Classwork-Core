@@ -14,55 +14,57 @@ import java.util.Scanner;
  */
 class ChatClientThread extends Thread {
 	// logger
-	static private Logger logger = LoggerFactory.getLogger(ChatClientThread.class);
+	static private Logger log = LoggerFactory.getLogger(ChatClientThread.class);
 
-	private DataInputStream streamIn;
+	private Socket socket;
+
 	private DataOutputStream streamOut;
-
-	private Scanner scanner;
 	private PrintWriter writer;
 
 	private boolean waitOkOnUpload = false;
 
+	// монитор нужен для синхронизации операции передачи файла и отправки текстового сообщения
 	private Object monitor = new Object();
 
+	/** constructor **/
 	ChatClientThread(Socket socket) {
-		try {
-			streamIn = new DataInputStream(socket.getInputStream());
-			scanner = new Scanner(streamIn);
-			streamOut = new DataOutputStream(socket.getOutputStream());
-			writer = new PrintWriter(streamOut);
-		} catch (IOException e) {
-			System.out.println("CLIENT ERROR in stream accending with " + socket);
-			e.printStackTrace();
-		}
+		this.socket = socket;
 	}
 
 	@Override
 	public void run() {
-		// клиент постоянно ждет ответа от сервера
-		while (!isInterrupted()) {
-			synchronized (monitor) {
-				String line = scanner.nextLine();
-				System.out.println(line);
+		try {
+			DataInputStream streamIn = new DataInputStream(socket.getInputStream());
+			Scanner scanner = new Scanner(streamIn);
+			streamOut = new DataOutputStream(socket.getOutputStream());
+			writer = new PrintWriter(streamOut);
 
-				if (waitOkOnUpload && line.equals("OK"))
-					// если пришла команда OK и клиент желает отправить файл
-					// тогда освобождаем monitor
-					try {
-						// жду пока выполнится другая команда
-						System.out.println("Thread wait...");
-						monitor.wait();
-					} catch (InterruptedException e) {
-						System.out.println("CLIENT ERROR while wait");
-						e.printStackTrace();
-					}
+			// клиент постоянно ждет ответа от сервера
+			while (!isInterrupted()) {
+				synchronized (monitor) {
+					// жду команду от сервера и вывожу ее сразу же в консоль
+					String line = scanner.nextLine();
+					System.out.println(line);
+
+					if (waitOkOnUpload && line.equals("OK"))
+						// если пришла команда OK и клиент желает отправить файл
+						// тогда освобождаем monitor
+						try {
+							// жду пока выполнится другая команда
+							log.info("Thread wait...");
+							monitor.wait();
+						} catch (InterruptedException e) {
+							log.error("CLIENT ERROR while wait", e);
+						}
+				}
 			}
+		} catch (IOException e) {
+			log.error("CLIENT ERROR in stream accending with " + socket, e);
 		}
 	}
 
 	/**
-	 * Команда отправляет серверу строку с переводом строки
+	 * Отправляет серверу строку с переводом строки
 	 *
 	 * @param command
 	 */
@@ -72,7 +74,7 @@ class ChatClientThread extends Thread {
 	}
 
 	/**
-	 * Команда выполняет загрузку файла
+	 * Переключение в режим передачи файла
 	 */
 	void uploadFile(String fileName) {
 		// хочу передать файл
@@ -84,21 +86,22 @@ class ChatClientThread extends Thread {
 		System.out.println(command + "...");
 		sendLine(command);
 
-		// жду пока поток освободиться и начну
+		// жду пока монитор освободится освободится и начну
 		synchronized (monitor) {
-			try (BufferedInputStream bis = new BufferedInputStream(
-					new FileInputStream(file));) {
+			// FIXME добавить проверку на существование файла
+			try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file))) {
 				// отправляю весь файл серваку
-				byte[] buffer = new byte[1024];
+				byte[] buffer = new byte[0x200];
 				int len;
+
+				// пока файл читается, читаю и отправляю кусками
 				while ((len = bis.read(buffer)) > 0) {
 					streamOut.write(buffer, 0, len);
 					streamOut.flush();
-					System.out.println("Sended: " + len);
+					log.info("Sends part with length " + len);
 				}
 			} catch (IOException e) {
-				System.out.println("CLIENT ERROR file send");
-				e.printStackTrace();
+				log.error("CLIENT ERROR file send", e);
 			}
 			// передача окончена
 			waitOkOnUpload = false;
