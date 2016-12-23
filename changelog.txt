@@ -76,3 +76,145 @@ Change files from: Thu Jan 01 03:00:00 GMT+03:00 1970
 - main\java\ru\innolearn\tests\TTT.java
 - main\resources\log4j.properties
 - test\java\DerBestTestHere.java
+
+------------------------------------------------------------
+New version null build 0.0.1
+Date: Thu Dec 15 11:00:51 GMT+03:00 2016
+Change files from: Wed Dec 14 19:21:39 GMT+03:00 2016
+- main\java\ru\innolearn\day09\unittesting\Calculator.java
+- test\java\ru\innolearn\day09\unittesting\CalculatorTest.java
+- test\resources\log4j.properties
+
+------------------------------------------------------------
+New version null build 0.0.1
+Date: Thu Dec 15 11:20:41 GMT+03:00 2016
+Change files from: Thu Dec 15 11:00:52 GMT+03:00 2016
+- test\java\ru\innolearn\day09\unittesting\CalculatorTest.java
+- test\resources\log4j.properties
+
+------------------------------------------------------------
+New version null build 0.0.1
+Date: Thu Dec 15 11:56:55 GMT+03:00 2016
+Change files from: Thu Dec 15 11:20:41 GMT+03:00 2016
+- main\java\ru\innolearn\day06\proxy\InterfaceOne.java
+- main\java\ru\innolearn\day06\proxy\InterfaceOneImpl.java
+- main\java\ru\innolearn\day06\proxy\InterfaceThree.java
+- main\java\ru\innolearn\day06\proxy\InterfaceThreeImpl.java
+- main\java\ru\innolearn\day06\proxy\InterfaceTwo.java
+- main\java\ru\innolearn\day06\proxy\InterfaceTwoImpl.java
+- main\java\ru\innolearn\day06\proxy\ProxyMain.java
+- main\java\ru\innolearn\day06\refletion\Human.java
+- main\java\ru\innolearn\day06\refletion\ReflectionMain.java
+- main\java\ru\innolearn\day09\unittesting\Mock.java
+- main\java\ru\innolearn\day09\unittesting\StreamReader.java
+- main\java\ru\innolearn\day09\unittesting\StreamWriter.java
+- test\java\ru\innolearn\day09\unittesting\CalculatorTest.java
+- test\java\ru\innolearn\day09\unittesting\MockTest.java
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+New version null build 0.0.1
+New version null build 0.0.1
+New version null build 0.0.1
+Date: Thu Dec 15 20:52:53 GMT+03:00 2016
+Change files from: Thu Dec 15 11:56:55 GMT+03:00 2016
+Date: Thu Dec 15 20:52:53 GMT+03:00 2016
+Change files from: Thu Dec 15 11:56:55 GMT+03:00 2016
+- main\java\ru\innolearn\day09\unittesting\Mock.java
+- main\java\ru\innolearn\day09\unittesting\Mock.java
+- main\java\ru\innolearn\day09\unittesting\StreamReader.java
+- main\java\ru\innolearn\day09\unittesting\StreamReader.java
+- main\java\ru\innolearn\day09\unittesting\StreamWriter.java
+- main\java\ru\innolearn\day09\unittesting\StreamWriter.java
+- main\java\ru\innolearn\day09\unittesting\WSStreamWriter.java
+- main\java\ru\innolearn\day09\unittesting\WSStreamWriter.java
+- test\java\MockTests.java
+- test\java\MockTests.java
+- test\java\ru\innolearn\day09\unittesting\MockTest.java
+- test\java\ru\innolearn\day09\unittesting\MockTest.java
+
+------------------------------------------------------------
+New version null build 0.0.1
+Date: Thu Dec 15 20:53:54 GMT+03:00 2016
+Change files from: Thu Dec 15 20:53:11 GMT+03:00 2016
+
+------------------------------------------------------------
+New version null build 0.0.1
+Date: Mon Dec 19 11:39:52 GMT+03:00 2016
+Change files from: Thu Dec 15 20:53:55 GMT+03:00 2016
+- main\java\ru\classwork\week01\Variant1.java
+- main\java\ru\classwork\week01\Variant2.java
+- main\java\ru\innolearn\day11\servlets\ServletMain.java
+- main\java\ru\innolearn\tests\closeable\Main.java
+- main\java\ru\innolearn\tests\closeable\MyAutoCloseable.java
+- main\java\ru\innolearn\tests\closeable\MyCloseable.java
+- main\java\ru\innolearn\tests\threads\concurent\RunnerMain.java
+
+------------------------------------------------------------
+New version null build 0.0.1
+Date: Wed Dec 21 19:47:03 GMT+03:00 2016
+Change files from: Mon Dec 19 11:39:54 GMT+03:00 2016
+- main\java\com\mkyong\common\Stock.java
+- main\java\ru\innolearn\day11\servlets\ServletMain.java
+- main\java\ru\innolearn\day13\tcpchat\c\MANIFEST.MF
+- main\java\ru\innolearn\day13\tcpchat\ChatClient.java
+- main\java\ru\innolearn\day13\tcpchat\ChatClientThread.java
+- main\java\ru\innolearn\day13\tcpchat\ChatServer.java
+- main\java\ru\innolearn\day13\tcpchat\ChatServerThread.java
+- main\java\ru\innolearn\day13\tcpchat\ClientMain.java
+- main\java\ru\innolearn\day13\tcpchat\s\MANIFEST.MF
+- main\java\ru\innolearn\day13\tcpchat\ServerMain.java
+- main\java\ru\innolearn\day13\urlwork\BrowserMain.java
+- main\java\tests\calls\CallTest.java
+- main\java\tests\calls\SomeClass2.java
+- main\java\tests\calls\Types.java
+- main\java\tests\ClassTest.java
+- main\java\tests\CloneTest.java
+- main\java\tests\closeable\Main.java
+- main\java\tests\closeable\MyAutoCloseable.java
+- main\java\tests\closeable\MyCloseable.java
+- main\java\tests\InitTest.java
+- main\java\tests\NumericTest.java
+- main\java\tests\ParentChild.java
+- main\java\tests\puzzlers\Test01.java
+- main\java\tests\puzzlers\Test01_RandomBehavior.java
+- main\java\tests\puzzlers\Test10_LoopyBahavior.java
+- main\java\tests\RegexTest.java
+- main\java\tests\RRR.java
+- main\java\tests\threads\concurent\RunnerMain.java
+- main\java\tests\threads\Football.java
+- main\java\tests\threads\VolatileTest.java
+- main\java\tests\ThreadTest.java
+- main\java\tests\TTT.java
+- main\resources\com\mkyong\common\Stock.hbm.xml
+- main\resources\hibernate.cfg.xml
+- main\resources\log4j.properties
+- test\java\ru\innolearn\day09\unittesting\CalculatorTest.java
+
+------------------------------------------------------------
+New version null build 0.0.1
+Date: Thu Dec 22 10:08:37 GMT+03:00 2016
+Change files from: Wed Dec 21 19:47:05 GMT+03:00 2016
+- main\java\ru\innolearn\day04\threads\SimpleThreadTest.java
+- main\java\ru\innolearn\day14\hibernate\common\Main1.java
+- main\java\ru\innolearn\day14\hibernate\common\Stock.java
+- main\java\ru\innolearn\day14\hibernate\common\Stock2.java
+- main\java\ru\innolearn\day14\hibernate\persistence\HibernateUtil.java
+- main\java\ru\innolearn\day14\jdbc\Main.java
+- main\resources\hibernate.cfg.xml
+- main\resources\log4j.properties
+- main\resources\ru\innolearn\day14\hibernate\common\Stock.hbm.xml
+
+------------------------------------------------------------
+New version null build 0.0.1
+Date: Thu Dec 22 11:37:52 GMT+03:00 2016
+Change files from: Thu Dec 22 10:08:38 GMT+03:00 2016
+- main\java\ru\innolearn\day14\hibernate\common\Main1.java
+- main\java\ru\innolearn\day14\hibernate\common\Stock.java
+- main\java\ru\innolearn\day14\hibernate\common\Stock2.java
+- main\java\ru\innolearn\day14\jdbc\Main.java
+- main\java\ru\innolearn\day14\jdbc\MyDriver.java
+- main\resources\hibernate.cfg.xml

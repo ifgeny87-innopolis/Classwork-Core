@@ -10,12 +10,27 @@ dependencies {
 //    compile 'org.slf4j:slf4j-simple:1.7.21'
     compile 'org.slf4j:slf4j-log4j12:1.7.21'
     compile 'log4j:log4j:1.2.17'
+
     // testing
     testCompile 'junit:junit:4.12'
     testCompile 'org.mockito:mockito-all:1.9.5'
+
     // servlet and web development
     compile 'javax.servlet:javax.servlet-api:3.1.0'
     compile 'org.json:json:20160810'
+
+    // mysql database driver
+    compile 'mysql:mysql-connector-java:6.0.5'
+    
+    // hibernate framework
+    compile 'org.hibernate:hibernate-core:5.2.5.Final'
+
+    // [begin] hibernate library dependency
+    compile 'dom4j:dom4j:1.4.1'
+    // [end] hibernate library dependency
+
+    // liquibase
+    compile 'org.liquibase:liquibase-maven-plugin:3.5.3'
 
 }
 
@@ -27,7 +42,7 @@ jar {
     // буду сразу подсовывать манифест
     manifest {
         attributes(
-                "Main-Class": "ru.innolearn.tests.RRR",
+                "Main-Class": "tests.RRR",
                 "Class-Path": configurations.compile.collect { it.getName() }.join(" ")
         )
     }
