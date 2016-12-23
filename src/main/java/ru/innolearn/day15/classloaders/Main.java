@@ -55,7 +55,12 @@ public class Main {
 				saveJavaNCompile(className, line);
 
 				log.info("Пробуем загрузить теперь и выполнить");
-				Class clazz = moduleLoader.loadClass(className);
+
+				// variant 1
+//				Class clazz = moduleLoader.loadClass(className);
+				// variant 2
+				Class clazz = Class.forName(className, true, moduleLoader);
+
 				Executable execute = (Executable) clazz.newInstance();
 
 				log.info("Запускаем");
