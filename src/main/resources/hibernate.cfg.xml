@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false</property>
+        <property name="hibernate.connection.username">test</property>
+        <property name="hibernate.connection.password">123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- маппинг oldschool -->
+        <mapping resource="ru/innolearn/day14/hibernate/common/Stock.hbm.xml"/>
+
+        <!-- маппинг с аннотациями -->
+        <mapping class="ru.innolearn.day14.hibernate.common.Stock2"/>
+    </session-factory>
+</hibernate-configuration>
