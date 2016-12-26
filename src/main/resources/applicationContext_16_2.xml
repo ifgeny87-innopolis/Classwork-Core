@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="uploader" class="ru.innolearn.day16.io.FileUploader"/>
+    <bean id="downloader" class="ru.innolearn.day16.io.FileDownloader"/>
+
+    <!-- 2. Маленький бин -->
+    <bean id="dataHandler2" class="ru.innolearn.day16.handlers.DataHandler" autowire="byName"/>
+
+    <!-- 3. Бин по типу -->
+    <bean id="dataHandler3" class="ru.innolearn.day16.handlers.DataHandler" autowire="byType"/>
+</beans>
+

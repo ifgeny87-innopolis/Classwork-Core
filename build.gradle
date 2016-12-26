@@ -31,6 +31,9 @@ dependencies {
 
     // liquibase
     compile 'org.liquibase:liquibase-maven-plugin:3.5.3'
+    
+    // Spring 
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.3.RELEASE'
 
 }
 
@@ -67,7 +70,7 @@ jar {
         // получаю номер билда из файла
         lines = lines[0].split("\\.")
         assert lines.length == 3, 'Build version wrong'
-        lines[2] = Integer.parseInt(buildVersion[2]) + 1 + ""
+        lines[2] = Integer.parseInt(lines[2]) + 1 + ""
         buildVersion = String.join(".", lines)
     }
 

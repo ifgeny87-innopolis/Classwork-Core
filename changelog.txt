@@ -78,7 +78,7 @@ Change files from: Thu Jan 01 03:00:00 GMT+03:00 1970
 - test\java\DerBestTestHere.java
 
 ------------------------------------------------------------
-New version null build 0.0.1
+New version null build 0.0.2
 Date: Thu Dec 15 11:00:51 GMT+03:00 2016
 Change files from: Wed Dec 14 19:21:39 GMT+03:00 2016
 - main\java\ru\innolearn\day09\unittesting\Calculator.java
@@ -86,14 +86,14 @@ Change files from: Wed Dec 14 19:21:39 GMT+03:00 2016
 - test\resources\log4j.properties
 
 ------------------------------------------------------------
-New version null build 0.0.1
+New version null build 0.0.3
 Date: Thu Dec 15 11:20:41 GMT+03:00 2016
 Change files from: Thu Dec 15 11:00:52 GMT+03:00 2016
 - test\java\ru\innolearn\day09\unittesting\CalculatorTest.java
 - test\resources\log4j.properties
 
 ------------------------------------------------------------
-New version null build 0.0.1
+New version null build 0.0.4
 Date: Thu Dec 15 11:56:55 GMT+03:00 2016
 Change files from: Thu Dec 15 11:20:41 GMT+03:00 2016
 - main\java\ru\innolearn\day06\proxy\InterfaceOne.java
@@ -112,15 +112,7 @@ Change files from: Thu Dec 15 11:20:41 GMT+03:00 2016
 - test\java\ru\innolearn\day09\unittesting\MockTest.java
 
 ------------------------------------------------------------
-
-------------------------------------------------------------
-
-------------------------------------------------------------
-New version null build 0.0.1
-New version null build 0.0.1
-New version null build 0.0.1
-Date: Thu Dec 15 20:52:53 GMT+03:00 2016
-Change files from: Thu Dec 15 11:56:55 GMT+03:00 2016
+New version null build 0.0.5
 Date: Thu Dec 15 20:52:53 GMT+03:00 2016
 Change files from: Thu Dec 15 11:56:55 GMT+03:00 2016
 - main\java\ru\innolearn\day09\unittesting\Mock.java
@@ -137,12 +129,12 @@ Change files from: Thu Dec 15 11:56:55 GMT+03:00 2016
 - test\java\ru\innolearn\day09\unittesting\MockTest.java
 
 ------------------------------------------------------------
-New version null build 0.0.1
+New version null build 0.0.6
 Date: Thu Dec 15 20:53:54 GMT+03:00 2016
 Change files from: Thu Dec 15 20:53:11 GMT+03:00 2016
 
 ------------------------------------------------------------
-New version null build 0.0.1
+New version null build 0.0.7
 Date: Mon Dec 19 11:39:52 GMT+03:00 2016
 Change files from: Thu Dec 15 20:53:55 GMT+03:00 2016
 - main\java\ru\classwork\week01\Variant1.java
@@ -154,7 +146,7 @@ Change files from: Thu Dec 15 20:53:55 GMT+03:00 2016
 - main\java\ru\innolearn\tests\threads\concurent\RunnerMain.java
 
 ------------------------------------------------------------
-New version null build 0.0.1
+New version null build 0.0.8
 Date: Wed Dec 21 19:47:03 GMT+03:00 2016
 Change files from: Mon Dec 19 11:39:54 GMT+03:00 2016
 - main\java\com\mkyong\common\Stock.java
@@ -195,7 +187,7 @@ Change files from: Mon Dec 19 11:39:54 GMT+03:00 2016
 - test\java\ru\innolearn\day09\unittesting\CalculatorTest.java
 
 ------------------------------------------------------------
-New version null build 0.0.1
+New version null build 0.0.9
 Date: Thu Dec 22 10:08:37 GMT+03:00 2016
 Change files from: Wed Dec 21 19:47:05 GMT+03:00 2016
 - main\java\ru\innolearn\day04\threads\SimpleThreadTest.java
@@ -209,7 +201,7 @@ Change files from: Wed Dec 21 19:47:05 GMT+03:00 2016
 - main\resources\ru\innolearn\day14\hibernate\common\Stock.hbm.xml
 
 ------------------------------------------------------------
-New version null build 0.0.1
+New version null build 0.0.10
 Date: Thu Dec 22 11:37:52 GMT+03:00 2016
 Change files from: Thu Dec 22 10:08:38 GMT+03:00 2016
 - main\java\ru\innolearn\day14\hibernate\common\Main1.java
@@ -218,3 +210,40 @@ Change files from: Thu Dec 22 10:08:38 GMT+03:00 2016
 - main\java\ru\innolearn\day14\jdbc\Main.java
 - main\java\ru\innolearn\day14\jdbc\MyDriver.java
 - main\resources\hibernate.cfg.xml
+
+------------------------------------------------------------
+New version null build 0.0.11
+Date: Mon Dec 26 10:20:53 GMT+03:00 2016
+Change files from: Thu Dec 22 11:37:53 GMT+03:00 2016
+- main\java\ru\innolearn\day04\threads\SimpleThreadTest.java
+- main\java\ru\innolearn\day15\classloaders\Main.java
+- main\java\ru\innolearn\day15\classloaders\ModuleLoader.java
+- main\java\ru\innolearn\day15\classloaders\modules\Executable.java
+- main\java\ru\innolearn\day16\ioc\Main.java
+- main\resources\appContext.xml
+
+------------------------------------------------------------
+New version null build 0.0.12
+Date: Mon Dec 26 11:33:08 GMT+03:00 2016
+Change files from: Mon Dec 26 10:20:55 GMT+03:00 2016
+- main\java\ru\innolearn\day16\handlers\DataHandler.java
+- main\java\ru\innolearn\day16\io\DbDownloader.java
+- main\java\ru\innolearn\day16\io\DbUploader.java
+- main\java\ru\innolearn\day16\io\Downloader.java
+- main\java\ru\innolearn\day16\io\FileDownloader.java
+- main\java\ru\innolearn\day16\io\FileUploader.java
+- main\java\ru\innolearn\day16\io\Uploader.java
+- main\java\ru\innolearn\day16\Main.java
+- main\resources\applicationContext_16_1.xml
+- main\resources\applicationContext_16_2.xml
+- main\resources\applicationContext_16_4.xml
+
+------------------------------------------------------------
+New version null build 0.0.13
+Date: Mon Dec 26 11:39:59 GMT+03:00 2016
+Change files from: Mon Dec 26 11:38:46 GMT+03:00 2016
+
+------------------------------------------------------------
+New version null build 0.0.14
+Date: Mon Dec 26 11:41:20 GMT+03:00 2016
+Change files from: Mon Dec 26 11:39:59 GMT+03:00 2016

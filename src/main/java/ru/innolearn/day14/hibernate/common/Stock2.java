@@ -1,8 +1,5 @@
 package ru.innolearn.day14.hibernate.common;
 
-import com.sun.istack.internal.NotNull;
-import org.hibernate.annotations.Type;
-
 import javax.persistence.*;
 
 /**
