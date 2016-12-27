@@ -1,4 +1,5 @@
 apply plugin: "java"
+apply plugin: "war"
 
 repositories {
     mavenCentral()
@@ -34,7 +35,10 @@ dependencies {
     
     // Spring 
     compile group: 'org.springframework', name: 'spring-context', version: '4.3.3.RELEASE'
-
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.3.RELEASE'
+    
+    // JSP workshop
+    compile group: 'jstl', name: 'jstl', version: '1.2'
 }
 
 compileJava {

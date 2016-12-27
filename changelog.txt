@@ -247,3 +247,42 @@ Change files from: Mon Dec 26 11:38:46 GMT+03:00 2016
 New version null build 0.0.14
 Date: Mon Dec 26 11:41:20 GMT+03:00 2016
 Change files from: Mon Dec 26 11:39:59 GMT+03:00 2016
+
+------------------------------------------------------------
+New version null build 0.0.15
+Date: Tue Dec 27 10:09:19 GMT+03:00 2016
+Change files from: Mon Dec 26 11:41:21 GMT+03:00 2016
+- main\java\ru\innolearn\day17\controllers\Home.java
+- main\java\ru\innolearn\day17\Main.java
+
+------------------------------------------------------------
+New version null build 0.0.16
+Date: Tue Dec 27 10:41:24 GMT+03:00 2016
+Change files from: Tue Dec 27 10:09:21 GMT+03:00 2016
+- main\java\ru\innolearn\day17\controllers\StudentController.java
+- main\webapp\jsp\hello.jsp
+- main\webapp\WEB-INF\dispatcher-servlet.xml
+- main\webapp\WEB-INF\web.xml
+
+------------------------------------------------------------
+New version null build 0.0.17
+Date: Tue Dec 27 10:43:21 GMT+03:00 2016
+Change files from: Tue Dec 27 10:41:24 GMT+03:00 2016
+- main\webapp\WEB-INF\web.xml
+
+------------------------------------------------------------
+New version null build 0.0.18
+Date: Tue Dec 27 10:43:44 GMT+03:00 2016
+Change files from: Tue Dec 27 10:43:22 GMT+03:00 2016
+
+------------------------------------------------------------
+New version null build 0.0.19
+Date: Tue Dec 27 10:44:29 GMT+03:00 2016
+Change files from: Tue Dec 27 10:43:44 GMT+03:00 2016
+
+------------------------------------------------------------
+New version null build 0.0.20
+Date: Tue Dec 27 10:51:28 GMT+03:00 2016
+Change files from: Tue Dec 27 10:44:30 GMT+03:00 2016
+- main\webapp\WEB-INF\student-servlet.xml
+- main\webapp\WEB-INF\web.xml
