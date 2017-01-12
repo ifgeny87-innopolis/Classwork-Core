@@ -1,4 +1,4 @@
-package ru.innolearn.day16.io;
+package ru.innolearn.day16.beans.io;
 
 import org.springframework.stereotype.Component;
 

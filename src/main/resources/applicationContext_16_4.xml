@@ -7,13 +7,13 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- 2. Маленький бин -->
-    <bean id="dataHandler2" class="ru.innolearn.day16.handlers.DataHandler" autowire="byName"/>
+    <!-- 2. Еще раз - маленький бин -->
+    <bean id="dataHandler2" class="ru.innolearn.day16.beans.handlers.DataHandler" autowire="byName"/>
 
-    <!-- 3. Бин по типу -->
-    <bean id="dataHandler3" class="ru.innolearn.day16.handlers.DataHandler" autowire="byType"/>
+    <!-- 3. Еще раз - бин по типу -->
+    <bean id="dataHandler3" class="ru.innolearn.day16.beans.handlers.DataHandler" autowire="byType"/>
 
-    <!-- 4. Чего-то там -->
+    <!-- 4. Пакет для авто-поиска -->
     <context:component-scan base-package="ru.innolearn.day16"/>
 </beans>
 

@@ -1,9 +1,9 @@
-package ru.innolearn.day16.handlers;
+package ru.innolearn.day16.beans.handlers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import ru.innolearn.day16.io.Uploader;
-import ru.innolearn.day16.io.Downloader;
+import ru.innolearn.day16.beans.io.Downloader;
+import ru.innolearn.day16.beans.io.Uploader;
 
 /**
  * Created in project Inno-Classroom-Work in 26.12.2016

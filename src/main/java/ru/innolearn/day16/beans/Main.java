@@ -1,9 +1,9 @@
-package ru.innolearn.day16;
+package ru.innolearn.day16.beans;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ru.innolearn.day16.handlers.DataHandler;
-import ru.innolearn.day16.io.DbUploader;
+import ru.innolearn.day16.beans.handlers.DataHandler;
+import ru.innolearn.day16.beans.io.DbUploader;
 
 /**
  * Created in project Inno-Classroom-Work in 26.12.2016
@@ -24,6 +24,7 @@ public class Main {
 			dataHandler1.setUploader(new DbUploader());
 			dataHandler1.handleData("src", "dest");
 
+			// Еще покопаемся в бинах:
 			// А теперь проверю что это Singleton (смотри атрибут scope в applicationContext_16_1.xml)
 			DataHandler dataHandlerCopy = (DataHandler) appCtx.getBean("dataHandler1");
 			System.out.println("Is singleton? " + (dataHandlerCopy == dataHandler1));
@@ -32,8 +33,7 @@ public class Main {
 		//////////////////////// 2 и 3 способ
 		// 2 и 3 способ похожи, разница в способе поиска бинов - по имени и типу
 		{
-			ApplicationContext appCtx = new ClassPathXmlApplicationContext(
-					new String[]{"applicationContext_16_2.xml"});
+			ApplicationContext appCtx = new ClassPathXmlApplicationContext("applicationContext_16_2.xml");
 
 			System.out.println("# 2");
 			// Поиск бинов в конфиге по имени
@@ -49,16 +49,16 @@ public class Main {
 		//////////////////////// 4 способ
 		// А теперь свойства автоматически создаются по типу
 		{
-			ApplicationContext appCtx = new ClassPathXmlApplicationContext(
-					new String[]{"applicationContext_16_4.xml"});
+			ApplicationContext appCtx = new ClassPathXmlApplicationContext("applicationContext_16_4.xml");
 
-			// Отработаем 2 и 3 способ но уже без указания бинов, контекст умеет искать по пакету
+			// Отработаем 2 и 3 способ но уже без указания бинов свойств
+			// Контекст умеет искать по пакету
 
-			System.out.println("# 4-2'");
+			System.out.println("# 4-2");
 			DataHandler dataHandler2 = (DataHandler) appCtx.getBean("dataHandler2");
 			dataHandler2.handleData("src", "dest");
 
-			System.out.println("# 4-3'");
+			System.out.println("# 4-3");
 			DataHandler dataHandler3 = (DataHandler) appCtx.getBean("dataHandler3");
 			dataHandler3.handleData("src", "dest");
 		}

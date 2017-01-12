@@ -5,14 +5,14 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 1. Большой бин -->
-    <bean id="dataHandler1" class="ru.innolearn.day16.handlers.DataHandler" scope="singleton">
+    <bean id="dataHandler1" class="ru.innolearn.day16.beans.handlers.DataHandler" scope="singleton">
         <constructor-arg name="downloader" ref="fdownloader"/>
         <constructor-arg name="uploader" ref="fuploader"/>
         <property name="downloader" ref="fdownloader"/>
         <property name="uploader" ref="fuploader"/>
     </bean>
 
-    <bean id="fuploader" class="ru.innolearn.day16.io.FileUploader"/>
-    <bean id="fdownloader" class="ru.innolearn.day16.io.FileDownloader"/>
+    <bean id="fuploader" class="ru.innolearn.day16.beans.io.FileUploader"/>
+    <bean id="fdownloader" class="ru.innolearn.day16.beans.io.FileDownloader"/>
 </beans>
 

@@ -6,6 +6,10 @@ import java.io.IOException;
 
 /**
  * Created in project Inno-Classroom-Work in 23.12.2016
+ *
+ * Класс умеет дефайнить .class файлы
+ *
+ * Ему нужно передать путь до папки с .class файлами и родительский ClassLoader
  */
 public class ModuleLoader extends ClassLoader {
 	// мето хранения файлов .class

@@ -4,13 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="uploader" class="ru.innolearn.day16.io.FileUploader"/>
-    <bean id="downloader" class="ru.innolearn.day16.io.FileDownloader"/>
+    <bean id="uploader" class="ru.innolearn.day16.beans.io.FileUploader"/>
+    <bean id="downloader" class="ru.innolearn.day16.beans.io.FileDownloader"/>
 
     <!-- 2. Маленький бин -->
-    <bean id="dataHandler2" class="ru.innolearn.day16.handlers.DataHandler" autowire="byName"/>
+    <bean id="dataHandler2" class="ru.innolearn.day16.beans.handlers.DataHandler" autowire="byName"/>
 
     <!-- 3. Бин по типу -->
-    <bean id="dataHandler3" class="ru.innolearn.day16.handlers.DataHandler" autowire="byType"/>
+    <bean id="dataHandler3" class="ru.innolearn.day16.beans.handlers.DataHandler" autowire="byType"/>
 </beans>
 

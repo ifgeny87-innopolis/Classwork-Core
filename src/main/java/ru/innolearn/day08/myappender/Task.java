@@ -3,9 +3,6 @@ package ru.innolearn.day08.myappender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Задача:
  * Реализовать свой аппендер, реализующий отправку на почту.

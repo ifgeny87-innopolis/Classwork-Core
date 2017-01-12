@@ -1,4 +1,4 @@
-package ru.innolearn.day16.io;
+package ru.innolearn.day16.beans.io;
 
 /**
  * Created in project Inno-Classroom-Work in 26.12.2016

@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * На сегодня программа работает по следующему сценарию:
  * 1) Получает от пользователя имя класса и строку с сообщением
- * 2) Создает наследуемый от Executable класс с этим именем с .java файл
+ * 2) Создает наследуемый от Executable класс с этим именем и сохраняет в .java файл
  * 3) Запускает компилятор и компилирует этот файл, получает .class
  * 4) ClassLoader загружает этот файл в байт-массив и парсит байт-код
  * 5) В методе execute объект должен вывести в System.out свое имя и сообщение
@@ -27,6 +27,7 @@ public class Main {
 	// путь где .java и .class лежат
 	private static final String classPath = "c:\\temp\\";
 
+	// объект дефайнит .class файлы
 	private static ModuleLoader moduleLoader = new ModuleLoader(classPath,
 			ClassLoader.getSystemClassLoader());
 
@@ -39,7 +40,7 @@ public class Main {
 				if ("exit".equalsIgnoreCase(line))
 					break;
 
-				if (line.length() == 0) {
+				if (line.isEmpty()) {
 					// FIXME: 23.12.2016 добавить валидацию имени класса
 					System.out.println("Ай-ай-ай, нельзя использовать пустое имя");
 					System.out.println("Давай попробуем еще раз");
@@ -91,16 +92,8 @@ public class Main {
 			os.write(java.getBytes());
 		}
 
-		// Variant 1 - встроенным компилятором
+		// компилирую
 		JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
 		compiler.run(null, null, null, fileName);
-
-		// Variant 2 - через консоль
-//		String cmd = "cmd /C cd c:\\temp && \"%JAVA_HOME%\\bin\\javac\" -classpath c:\\Projects\\java\\Inno-Classroom-Work\\build\\classes\\main\\ " + fileName;
-//		log.info("Cmd: " + cmd);
-
-//		Process proc = Runtime.getRuntime().exec(cmd);
-//		while (proc.isAlive())
-//			Thread.sleep(100);
 	}
 }
