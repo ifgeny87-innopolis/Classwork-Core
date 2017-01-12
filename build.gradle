@@ -26,19 +26,30 @@ dependencies {
     // hibernate framework
     compile 'org.hibernate:hibernate-core:5.2.5.Final'
 
-    // [begin] hibernate library dependency
+    // hibernate library dependency
     compile 'dom4j:dom4j:1.4.1'
-    // [end] hibernate library dependency
 
     // liquibase
     compile 'org.liquibase:liquibase-maven-plugin:3.5.3'
     
     // Spring 
-    compile group: 'org.springframework', name: 'spring-context', version: '4.3.3.RELEASE'
-    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.3.RELEASE'
+    compile 'org.springframework:spring-context:4.3.3.RELEASE'
+    compile 'org.springframework:spring-webmvc:4.3.3.RELEASE'
     
-    // JSP workshop
-    compile group: 'jstl', name: 'jstl', version: '1.2'
+    // JSP Standard Tag Library
+    compile 'jstl:jstl:1.2'
+    
+    // Jackson JSON mapper
+    // Для Spring MVC: авто-конвертация Object в Json для контроллеров
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.4.3'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.4.3'
+    compile 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.6.1'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-core
+    compile 'org.springframework.security:spring-security-core:3.1.0.RELEASE'
+
+
 }
 
 compileJava {

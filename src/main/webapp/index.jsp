@@ -4,7 +4,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Hello</h1>
-<a href="hello">Go to Hello</a>
+<h1>Welcome to <u>Spring MVC</u> test Application</h1>
+<a href="day17">Go to app</a>
 </body>
 </html>

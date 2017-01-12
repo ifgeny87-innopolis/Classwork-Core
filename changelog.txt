@@ -286,3 +286,72 @@ Date: Tue Dec 27 10:51:28 GMT+03:00 2016
 Change files from: Tue Dec 27 10:44:30 GMT+03:00 2016
 - main\webapp\WEB-INF\student-servlet.xml
 - main\webapp\WEB-INF\web.xml
+
+------------------------------------------------------------
+New version null build 0.0.21
+Date: Sun Jan 08 12:15:36 MSK 2017
+Change files from: Tue Dec 27 10:51:28 MSK 2016
+- main/webapp/index.jsp
+- main/webapp/WEB-INF/web.xml
+- main/webapp/WEB-INF/jsp/hello.jsp
+- main/webapp/WEB-INF/student-servlet.xml
+- main/java/ru/innolearn/day17/controllers/AppCtrl.java
+- main/java/ru/innolearn/day17/controllers/StudentController.java
+
+------------------------------------------------------------
+New version null build 0.0.22
+Date: Sun Jan 08 18:23:34 MSK 2017
+Change files from: Sun Jan 08 12:15:36 MSK 2017
+- main/webapp/index.jsp
+- main/webapp/WEB-INF/web.xml
+- main/webapp/WEB-INF/jsp/hello.jsp
+- main/webapp/WEB-INF/hello-servlet.xml
+- main/java/tests/CastTest.java
+- main/java/tests/ClassTest.java
+- main/java/tests/initcycle/InitTest.java
+- main/java/tests/initcycle/A.java
+- main/java/tests/initcycle/C.java
+- main/java/tests/initcycle/B.java
+- main/java/ru/innolearn/day15/classloaders/ModuleLoader.java
+- main/java/ru/innolearn/day15/classloaders/Main.java
+- main/java/ru/innolearn/day16/beans/io/DbDownloader.java
+- main/java/ru/innolearn/day16/beans/io/FileUploader.java
+- main/java/ru/innolearn/day16/beans/io/Downloader.java
+- main/java/ru/innolearn/day16/beans/io/DbUploader.java
+- main/java/ru/innolearn/day16/beans/io/FileDownloader.java
+- main/java/ru/innolearn/day16/beans/io/Uploader.java
+- main/java/ru/innolearn/day16/beans/handlers/DataHandler.java
+- main/java/ru/innolearn/day16/beans/Main.java
+- main/java/ru/innolearn/day17/controllers/HelloController.java
+- main/resources/applicationContext_16_4.xml
+- main/resources/applicationContext_16_2.xml
+- main/resources/applicationContext_16_1.xml
+
+------------------------------------------------------------
+New version null build 0.0.23
+Date: Sun Jan 08 18:28:36 MSK 2017
+Change files from: Sun Jan 08 18:23:35 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.24
+Date: Sun Jan 08 18:37:48 MSK 2017
+Change files from: Sun Jan 08 18:28:37 MSK 2017
+- main/webapp/WEB-INF/hello-servlet.xml
+- main/java/ru/innolearn/day17/controllers/HelloController.java
+- main/java/ru/innolearn/day17/controllers/model/Student.java
+
+------------------------------------------------------------
+New version null build 0.0.25
+Date: Sun Jan 08 18:40:43 MSK 2017
+Change files from: Sun Jan 08 18:37:49 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.26
+Date: Sun Jan 08 18:48:53 MSK 2017
+Change files from: Sun Jan 08 18:40:44 MSK 2017
+- main/webapp/WEB-INF/hello-servlet.xml
+
+------------------------------------------------------------
+New version null build 0.0.27
+Date: Sun Jan 08 18:49:15 MSK 2017
+Change files from: Sun Jan 08 18:48:53 MSK 2017

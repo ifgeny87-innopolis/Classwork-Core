@@ -7,16 +7,22 @@
            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- Включаем аннотации mvc -->
-    <context:annotation-config/>
+    <!-- Включаем аннотации MVC -->
+    <!--<context:annotation-config/>-->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 
     <!-- Указываем в каких пакетах производить поиск -->
     <context:component-scan base-package="ru.innolearn.day17"/>
 
-    <!-- бин указывающий где лежат jsp для view -->
+    <!-- Бин указывает где лежат .JSP для view -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass"  value="org.springframework.web.servlet.view.JstlView" />
-        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="prefix" value="/WEB-INF/day17/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 </beans>

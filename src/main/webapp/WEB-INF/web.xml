@@ -4,26 +4,30 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
 
+    <!-- Какой конфиг использовать -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/student-servlet.xml</param-value>
+        <param-value>/WEB-INF/day17-servlet.xml</param-value>
     </context-param>
 
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
+    <!-- Сервис -->
     <servlet>
-        <servlet-name>student</servlet-name>
+        <servlet-name>day17</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
+    <!-- Маппинг сервлетов -->
     <servlet-mapping>
-        <servlet-name>student</servlet-name>
-        <url-pattern>/hello</url-pattern>
+        <servlet-name>day17</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+    <!-- index -->
     <welcome-file-list>
         <welcome-file>/index.jsp</welcome-file>
     </welcome-file-list>
