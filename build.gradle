@@ -22,7 +22,7 @@ dependencies {
 
     // mysql database driver
     compile 'mysql:mysql-connector-java:6.0.5'
-    
+
     // hibernate framework
     compile 'org.hibernate:hibernate-core:5.2.5.Final'
 
@@ -31,14 +31,14 @@ dependencies {
 
     // liquibase
     compile 'org.liquibase:liquibase-maven-plugin:3.5.3'
-    
+
     // Spring 
     compile 'org.springframework:spring-context:4.3.3.RELEASE'
     compile 'org.springframework:spring-webmvc:4.3.3.RELEASE'
-    
+
     // JSP Standard Tag Library
     compile 'jstl:jstl:1.2'
-    
+
     // Jackson JSON mapper
     // Для Spring MVC: авто-конвертация Object в Json для контроллеров
     compile 'com.fasterxml.jackson.core:jackson-databind:2.4.3'
@@ -46,10 +46,11 @@ dependencies {
     compile 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.6.1'
     compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
 
-    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-core
-    compile 'org.springframework.security:spring-security-core:3.1.0.RELEASE'
-
-
+    // Spring Security
+    compile 'org.springframework.security:spring-security-web:4.1.3.RELEASE'
+    compile 'org.springframework.security:spring-security-config:4.1.3.RELEASE'
+    compile 'org.springframework.security:spring-security-taglibs:4.1.3.RELEASE'
+    compile 'org.springframework.security:spring-security-core:4.1.3.RELEASE'
 }
 
 compileJava {
