@@ -8,7 +8,7 @@ import java.util.Set;
  * Created by marina on 09.12.2016.
  * <p>
  * What does it print?
- * (a) A number close to 1
+ * (T006) A number close to 1
  * (b) A number close to 50
  * (c) A number close to 100
  * (d) None of the above

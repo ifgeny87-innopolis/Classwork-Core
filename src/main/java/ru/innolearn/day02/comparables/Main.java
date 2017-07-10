@@ -16,13 +16,13 @@ public class Main extends Object {
         A c = new A();
         c.x = 100;
 
-        System.out.println("a.x : " + a.x);
+        System.out.println("T006.x : " + a.x);
         System.out.println("b.x : " + b.x);
         System.out.println("c.x : " + c.x);
-        System.out.println("a == b : " + (a == b));
-        System.out.println("a.equals(b) : " + a.equals(b));
-        System.out.println("a.compareTo(b) : " + a.compareTo(b));
-        System.out.println("a.compareTo(c) : " + a.compareTo(c));
+        System.out.println("T006 == b : " + (a == b));
+        System.out.println("T006.equals(b) : " + a.equals(b));
+        System.out.println("T006.compareTo(b) : " + a.compareTo(b));
+        System.out.println("T006.compareTo(c) : " + a.compareTo(c));
     }
 
 }

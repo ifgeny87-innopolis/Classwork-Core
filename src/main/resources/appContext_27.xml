@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/data/jpa
+       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+    <!-- @Transaction annotation support -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- Обеспечивает работу с транзакциями в Spring -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="emf"/>
+    </bean>
+
+    <!-- EntityManagerFactory -->
+    <bean id="emf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+
+        <!--поиск сущностей в этом пакете-->
+        <property name="packagesToScan" value="ru.innolearn.day27.springdata"/>
+
+        <!--Поставщик данных - hibernate-->
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+        </property>
+
+        <property name="persistenceUnitName" value="publishing"/>
+
+        <property name="jpaProperties">
+            <props>
+                <prop key="javax.persistence.validation.mode">none</prop>
+                <prop key="hibernate.archive.autodetection">class,hbm</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Datasource -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false"/>
+        <property name="username" value="test"/>
+        <property name="password" value="123"/>
+    </bean>
+
+    <bean id="userService" class="ru.innolearn.day27.springdata.UserServiceImpl"/>
+
+    <!--Activates various annotations to be detected in bean classes: Spring's @Required and @Autowired and so on-->
+    <context:annotation-config/>
+
+    <!--Scanning components in base-package (look for annotations) -->
+    <context:component-scan base-package="ru.innolearn.day27.springdata"/>
+
+    <!-- Need for Repository abstraction -->
+    <jpa:repositories base-package="ru.innolearn.day27.springdata"
+                      entity-manager-factory-ref="emf"
+                      transaction-manager-ref="transactionManager"/>
+
+</beans>

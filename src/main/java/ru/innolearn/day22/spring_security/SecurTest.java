@@ -12,6 +12,5 @@ public class SecurTest
 	{
 		DelegatingFilterProxy dfp;
 		AuthenticationProvider ap;
-
 	}
 }

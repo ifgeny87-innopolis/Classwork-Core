@@ -1,5 +1,8 @@
 package ru.innolearn.day14.hibernate.common;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchProfile;
+
 import javax.persistence.*;
 
 /**

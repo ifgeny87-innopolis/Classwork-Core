@@ -54,13 +54,13 @@ class T2 extends Thread {
 	@Override
 	public void run() {
 		while (!isInterrupted())
-			// условие номер один, CloneTest.a - должно быть четным!
+			// условие номер один, CloneTest.T006 - должно быть четным!
 			if (RR.flag) {
 				int a = RR.a;
 				if (a % 2 == 0)
 					continue;
 
-				// a <= CloneTest.a - закон
+				// T006 <= CloneTest.T006 - закон
 				System.out.printf("%d   %,d   %,d   %b\n", index, a, RR.a, RR.flag);
 			}
 	}

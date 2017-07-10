@@ -14,7 +14,7 @@ public class RegexTest {
                 "parse -f input.txt",
                 "run -name folder/file.ext -w 1000 -q",
                 "makarov_es@mail.ru,i@guy.com",
-                "ivanov.ivan+work@mail.email.ru a@b.cd",
+                "ivanov.ivan+work@mail.email.ru T006@b.cd",
                 "#12dbef",
                 "#rgba12",  // wrong color
                 "#1234",    // wrong color too

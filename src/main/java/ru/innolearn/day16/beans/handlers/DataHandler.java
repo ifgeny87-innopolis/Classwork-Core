@@ -51,4 +51,3 @@ public class DataHandler {
 		this.uploader = uploader;
 	}
 }
-

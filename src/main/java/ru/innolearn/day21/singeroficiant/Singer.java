@@ -6,6 +6,6 @@ package ru.innolearn.day21.singeroficiant;
 public interface Singer
 {
 	default void dowork() {
-		System.out.println("Aaa-a-a--a-a-a--aaa");
+		System.out.println("Aaa-T006-T006--T006-T006-T006--aaa");
 	}
 }

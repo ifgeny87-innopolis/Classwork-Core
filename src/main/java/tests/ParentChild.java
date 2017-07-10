@@ -27,7 +27,7 @@ public class ParentChild {
 		}
 
 		void a() {
-			System.out.println("Parent a: " + name + ", " + key);
+			System.out.println("Parent T006: " + name + ", " + key);
 			b();
 		}
 

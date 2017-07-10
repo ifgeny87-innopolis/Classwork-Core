@@ -355,3 +355,280 @@ Change files from: Sun Jan 08 18:40:44 MSK 2017
 New version null build 0.0.27
 Date: Sun Jan 08 18:49:15 MSK 2017
 Change files from: Sun Jan 08 18:48:53 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.28
+Date: Thu Jan 19 09:30:24 MSK 2017
+Change files from: Sun Jan 08 18:49:15 MSK 2017
+- test/java/RegexTest.java
+- test/java/Test.java
+- test/java/MockTests.java
+- test/java/ru/innolearn/day09/unittesting/CalculatorTest.java
+- test/java/ru/innolearn/day09/unittesting/MockTest.java
+- test/java/MathTest.java
+- test/resources/log4j.properties
+- main/webapp/index.jsp
+- main/webapp/WEB-INF/web.xml
+- main/webapp/WEB-INF/day17/hello.jsp
+- main/webapp/WEB-INF/day17-servlet.xml
+- main/webapp/WEB-INF/security-context.xml
+- main/java/week01/Variant2.java
+- main/java/week01/Variant1.java
+- main/java/quizful/Test01.java
+- main/java/tests/FloatAndDouble.java
+- main/java/tests/closeable/MyAutoCloseable.java
+- main/java/tests/closeable/MyCloseable.java
+- main/java/tests/closeable/Main.java
+- main/java/tests/CloneTest.java
+- main/java/tests/RegexTest.java
+- main/java/tests/NumericTest.java
+- main/java/tests/ClassTest.java
+- main/java/tests/ParentChild.java
+- main/java/tests/ThreadTest.java
+- main/java/tests/initcycle/AnimalTest.java
+- main/java/tests/initcycle/AbcTest.java
+- main/java/tests/calls/SomeClass2.java
+- main/java/tests/calls/Types.java
+- main/java/tests/calls/CallTest.java
+- main/java/tests/test20170113/T005.java
+- main/java/tests/test20170113/T002.java
+- main/java/tests/test20170113/T006.java
+- main/java/tests/test20170113/T003.java
+- main/java/tests/test20170113/T001.java
+- main/java/tests/test20170113/T004.java
+- main/java/tests/puzzlers/Test01_RandomBehavior.java
+- main/java/tests/puzzlers/Test01.java
+- main/java/tests/puzzlers/Test10_LoopyBahavior.java
+- main/java/tests/threads/VolatileTest.java
+- main/java/tests/threads/Football.java
+- main/java/tests/threads/concurent/RunnerMain.java
+- main/java/tests/eq/IntTest.java
+- main/java/tests/collections/sets/SetTest.java
+- main/java/tests/tt1.java
+- main/java/sberteh/matorin/t05.java
+- main/java/sberteh/matorin/t06.java
+- main/java/sberteh/matorin/t03.java
+- main/java/sberteh/matorin/t02.java
+- main/java/sberteh/matorin/t04.java
+- main/java/sberteh/matorin/t01.java
+- main/java/ru/innolearn/day26/patterns/VkAdapter.java
+- main/java/ru/innolearn/day26/patterns/bridge/SmallCircleDrawer.java
+- main/java/ru/innolearn/day26/patterns/bridge/Drawer.java
+- main/java/ru/innolearn/day26/patterns/bridge/Shape.java
+- main/java/ru/innolearn/day26/patterns/bridge/LargeCircleDrawer.java
+- main/java/ru/innolearn/day26/patterns/bridge/Circle.java
+- main/java/ru/innolearn/day26/patterns/bridge/Main.java
+- main/java/ru/innolearn/day26/patterns/composite/Main.java
+- main/java/ru/innolearn/day26/patterns/adapter/Main.java
+- main/java/ru/innolearn/day26/patterns/GameMain.java
+- main/java/ru/innolearn/day26/patterns/ISocialWeb.java
+- main/java/ru/innolearn/day26/patterns/strategy/ConcreteStrategyMultiply.java
+- main/java/ru/innolearn/day26/patterns/strategy/Context.java
+- main/java/ru/innolearn/day26/patterns/strategy/ConcreteStrategySubtract.java
+- main/java/ru/innolearn/day26/patterns/strategy/ConcreteStrategyAdd.java
+- main/java/ru/innolearn/day26/patterns/strategy/Main.java
+- main/java/ru/innolearn/day26/patterns/strategy/Strategy.java
+- main/java/ru/innolearn/day21/singeroficiant/Oficiant.java
+- main/java/ru/innolearn/day21/singeroficiant/SingerOficiant.java
+- main/java/ru/innolearn/day21/singeroficiant/Singer.java
+- main/java/ru/innolearn/day21/singeroficiant/Employee.java
+- main/java/ru/innolearn/day21/lambdas/LamTest.java
+- main/java/ru/innolearn/day21/interfaces/InterTest.java
+- main/java/ru/innolearn/day11/servlets/ServletMain.java
+- main/java/ru/innolearn/day02/hashmap/Car.java
+- main/java/ru/innolearn/day02/hashmap/Human.java
+- main/java/ru/innolearn/day02/comparables/A.java
+- main/java/ru/innolearn/day02/comparables/Main.java
+- main/java/ru/innolearn/day15/classloaders/ModuleLoader.java
+- main/java/ru/innolearn/day15/classloaders/Main.java
+- main/java/ru/innolearn/day15/classloaders/modules/Executable.java
+- main/java/ru/innolearn/day05/Test.java
+- main/java/ru/innolearn/day16/beans/io/DbDownloader.java
+- main/java/ru/innolearn/day16/beans/io/FileUploader.java
+- main/java/ru/innolearn/day16/beans/io/Downloader.java
+- main/java/ru/innolearn/day16/beans/io/DbUploader.java
+- main/java/ru/innolearn/day16/beans/io/FileDownloader.java
+- main/java/ru/innolearn/day16/beans/io/Uploader.java
+- main/java/ru/innolearn/day16/beans/handlers/DataHandler.java
+- main/java/ru/innolearn/day16/beans/Main.java
+- main/java/ru/innolearn/day22/spring_security/SecurTest.java
+- main/java/ru/innolearn/day17/spring/controllers/Day17Controller.java
+- main/java/ru/innolearn/day17/spring/model/Student.java
+- main/java/ru/innolearn/day27/springdata/Main.java
+- main/java/ru/innolearn/day03/closeable/CloseableTest.java
+- main/java/ru/innolearn/day03/serialize/Human.java
+- main/java/ru/innolearn/day03/exceptions/ExceptionTest.java
+- main/java/ru/innolearn/day01/maps/Cartoon.java
+- main/java/ru/innolearn/day01/Cartoon.java
+- main/java/ru/innolearn/day01/cartoon/another/Cartoon.java
+- main/java/ru/innolearn/day01/CartoonTest.java
+- main/java/ru/innolearn/day13/tcpchat/ClientMain.java
+- main/java/ru/innolearn/day13/tcpchat/ChatClientThread.java
+- main/java/ru/innolearn/day13/tcpchat/c/make.cmd
+- main/java/ru/innolearn/day13/tcpchat/c/run_client.cmd
+- main/java/ru/innolearn/day13/tcpchat/c/MANIFEST.MF
+- main/java/ru/innolearn/day13/tcpchat/ServerMain.java
+- main/java/ru/innolearn/day13/tcpchat/ChatServer.java
+- main/java/ru/innolearn/day13/tcpchat/s/make.cmd
+- main/java/ru/innolearn/day13/tcpchat/s/MANIFEST.MF
+- main/java/ru/innolearn/day13/tcpchat/s/run_server.cmd
+- main/java/ru/innolearn/day13/tcpchat/ChatServerThread.java
+- main/java/ru/innolearn/day13/tcpchat/ChatClient.java
+- main/java/ru/innolearn/day13/urlwork/BrowserMain.java
+- main/java/ru/innolearn/day04/threads/TimerTest.java
+- main/java/ru/innolearn/day04/threads/RaceMain.java
+- main/java/ru/innolearn/day04/threads/CalcTest.java
+- main/java/ru/innolearn/day04/threads/DeadLockTest.java
+- main/java/ru/innolearn/day08/myappender/MailAppender.java
+- main/java/ru/innolearn/day08/myappender/Task.java
+- main/java/ru/innolearn/day08/loggggging/LoggerTest1.java
+- main/java/ru/innolearn/day08/loggggging/LoggerTest2.java
+- main/java/ru/innolearn/day06/xmlparser/ReflectXmlParser.java
+- main/java/ru/innolearn/day06/xmlparser/Student.java
+- main/java/ru/innolearn/day06/xmlparser/ClassLib.java
+- main/java/ru/innolearn/day06/xmlparser/Worker.java
+- main/java/ru/innolearn/day06/xmlparser/Human.java
+- main/java/ru/innolearn/day06/proxy/InterfaceThree.java
+- main/java/ru/innolearn/day06/proxy/InterfaceThreeImpl.java
+- main/java/ru/innolearn/day06/proxy/InterfaceTwoImpl.java
+- main/java/ru/innolearn/day06/proxy/InterfaceOne.java
+- main/java/ru/innolearn/day06/proxy/ProxyMain.java
+- main/java/ru/innolearn/day06/proxy/InterfaceOneImpl.java
+- main/java/ru/innolearn/day06/proxy/InterfaceTwo.java
+- main/java/ru/innolearn/day06/refletion/ReflectionMain.java
+- main/java/ru/innolearn/day06/refletion/Human.java
+- main/java/ru/innolearn/day09/unittesting/StreamWriter.java
+- main/java/ru/innolearn/day09/unittesting/Mock.java
+- main/java/ru/innolearn/day09/unittesting/Calculator.java
+- main/java/ru/innolearn/day09/unittesting/StreamReader.java
+- main/java/ru/innolearn/day09/unittesting/WSStreamWriter.java
+- main/java/ru/innolearn/day25/patterns/builders/ContinentBuilder.java
+- main/java/ru/innolearn/day25/patterns/factories/ContinentFactory.java
+- main/java/ru/innolearn/day25/patterns/factories/AzbukaFactory.java
+- main/java/ru/innolearn/day25/patterns/decorator_test/Ванилька.java
+- main/java/ru/innolearn/day25/patterns/decorator_test/КофейныйДекоратор.java
+- main/java/ru/innolearn/day25/patterns/decorator_test/Кофейко.java
+- main/java/ru/innolearn/day25/patterns/decorator_test/Молочко.java
+- main/java/ru/innolearn/day25/patterns/decorator_test/Сахарок.java
+- main/java/ru/innolearn/day25/patterns/decorator_test/КофейныйКомпонент.java
+- main/java/ru/innolearn/day25/patterns/models/Shop.java
+- main/java/ru/innolearn/day25/patterns/models/Continent/ContinentWeapon.java
+- main/java/ru/innolearn/day25/patterns/models/Continent/ContinentTech.java
+- main/java/ru/innolearn/day25/patterns/models/Continent/ContinentFood.java
+- main/java/ru/innolearn/day25/patterns/models/Tech.java
+- main/java/ru/innolearn/day25/patterns/models/Company.java
+- main/java/ru/innolearn/day25/patterns/models/AzbukaVkusa/AzbukaWeapon.java
+- main/java/ru/innolearn/day25/patterns/models/AzbukaVkusa/AzbukaTech.java
+- main/java/ru/innolearn/day25/patterns/models/AzbukaVkusa/AzbukaFoods.java
+- main/java/ru/innolearn/day25/patterns/models/Weapon.java
+- main/java/ru/innolearn/day25/patterns/models/Employee.java
+- main/java/ru/innolearn/day25/patterns/models/Customer.java
+- main/java/ru/innolearn/day25/patterns/models/Foods.java
+- main/java/ru/innolearn/day25/patterns/factorymethods/ContinentCreator.java
+- main/java/ru/innolearn/day25/patterns/Main.java
+- main/java/ru/innolearn/day25/patterns/tools/IAbstractFactory.java
+- main/java/ru/innolearn/day25/patterns/tools/Singleton.java
+- main/java/ru/innolearn/day25/patterns/tools/FabricMethod.java
+- main/java/ru/innolearn/day25/patterns/tools/FabricCreator.java
+- main/java/ru/innolearn/day25/patterns/tools/FoodBuilder.java
+- main/java/ru/innolearn/day14/hibernate/common/User.java
+- main/java/ru/innolearn/day14/hibernate/common/Main1.java
+- main/java/ru/innolearn/day14/hibernate/common/Tech.java
+- main/java/ru/innolearn/day14/hibernate/common/Room.java
+- main/java/ru/innolearn/day14/hibernate/common/UserRoomsMain.java
+- main/java/ru/innolearn/day14/hibernate/common/Stock.java
+- main/java/ru/innolearn/day14/hibernate/common/Stock2.java
+- main/java/ru/innolearn/day14/hibernate/persistence/HibernateUtil.java
+- main/java/ru/innolearn/day14/jdbc/MyDriver.java
+- main/java/ru/innolearn/day14/jdbc/Main.java
+- main/java/ru/innolearn/day19/badcode/GCTest.java
+- main/java/com/hackerrank/Task29.md
+- main/java/com/hackerrank/Day28.java
+- main/java/com/hackerrank/Day29.java
+- main/resources/applicationContext_16_4.xml
+- main/resources/log4j.properties
+- main/resources/hibernate.cfg.xml
+- main/resources/ru/innolearn/day14/hibernate/common/Stock.hbm.xml
+- main/resources/applicationContext_16_2.xml
+- main/resources/applicationContext_16_1.xml
+
+------------------------------------------------------------
+New version null build 0.0.29
+Date: Thu Jan 19 11:04:39 MSK 2017
+Change files from: Thu Jan 19 09:30:24 MSK 2017
+- main/java/ru/innolearn/day27/springdata/UserRepository.java
+- main/java/ru/innolearn/day27/springdata/UserService.java
+- main/java/ru/innolearn/day27/springdata/Main.java
+- main/resources/appContext_27.xml
+
+------------------------------------------------------------
+New version null build 0.0.30
+Date: Thu Jan 19 11:05:32 MSK 2017
+Change files from: Thu Jan 19 11:04:39 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.31
+Date: Thu Jan 19 11:05:45 MSK 2017
+Change files from: Thu Jan 19 11:05:32 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.32
+Date: Thu Jan 19 11:06:20 MSK 2017
+Change files from: Thu Jan 19 11:05:45 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.33
+Date: Thu Jan 19 11:06:42 MSK 2017
+Change files from: Thu Jan 19 11:06:20 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.34
+Date: Thu Jan 19 11:07:40 MSK 2017
+Change files from: Thu Jan 19 11:06:42 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.35
+Date: Thu Jan 19 11:07:54 MSK 2017
+Change files from: Thu Jan 19 11:07:40 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.36
+Date: Thu Jan 19 11:08:16 MSK 2017
+Change files from: Thu Jan 19 11:07:54 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.37
+Date: Thu Jan 19 14:44:36 MSK 2017
+Change files from: Thu Jan 19 11:08:16 MSK 2017
+- main/java/ru/innolearn/day27/springdata/UserServiceImpl.java
+- main/java/ru/innolearn/day27/springdata/User.java
+- main/java/ru/innolearn/day27/springdata/Tech.java
+- main/java/ru/innolearn/day27/springdata/UserRepository.java
+- main/java/ru/innolearn/day27/springdata/Room.java
+- main/java/ru/innolearn/day27/springdata/UserService.java
+- main/java/ru/innolearn/day27/springdata/Main.java
+- main/resources/appContext_27.xml
+
+------------------------------------------------------------
+New version null build 0.0.38
+Date: Thu Jan 19 14:49:42 MSK 2017
+Change files from: Thu Jan 19 14:44:37 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.39
+Date: Thu Jan 19 14:50:52 MSK 2017
+Change files from: Thu Jan 19 14:49:42 MSK 2017
+
+------------------------------------------------------------
+New version null build 0.0.40
+Date: Mon Jun 26 23:47:13 MSK 2017
+Change files from: Thu Jan 19 14:50:52 MSK 2017
+- main/java/tests/FloatAndDouble.java
+- main/java/tests/SomeTest.java
+- main/java/tests/ListTest.java
+- main/java/tests/TestPreDefine.java
+- main/java/tests/math/PrimeNumbers.java
+- main/java/tests/ClassTest01.java
+- main/java/tests/MathTest.java
+- main/java/ru/innolearn/day14/hibernate/common/UserRoomsMain.java
+- main/resources/appContext_27.xml

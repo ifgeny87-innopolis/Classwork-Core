@@ -15,5 +15,9 @@
 
         <!-- маппинг с аннотациями -->
         <mapping class="ru.innolearn.day14.hibernate.common.Stock2"/>
+
+        <mapping class="ru.innolearn.day14.hibernate.common.User"/>
+        <mapping class="ru.innolearn.day14.hibernate.common.Room"/>
+        <mapping class="ru.innolearn.day14.hibernate.common.Tech"/>
     </session-factory>
 </hibernate-configuration>
